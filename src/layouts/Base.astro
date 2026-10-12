@@ -15,10 +15,20 @@ const {
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const image = new URL("/avatar.png", Astro.site).toString();
 const personId = `${Astro.site}#person`;
+const websiteId = `${Astro.site}#website`;
 
 const person = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": websiteId,
+      url: Astro.site?.toString(),
+      name: `${profile.name} — Portfolio`,
+      inLanguage: "en",
+      author: { "@id": personId },
+      publisher: { "@id": personId },
+    },
     {
       "@type": "Person",
       "@id": personId,
@@ -45,6 +55,7 @@ const person = {
       name: title,
       description,
       mainEntity: { "@id": personId },
+      isPartOf: { "@id": websiteId },
       inLanguage: "en",
     },
   ],
@@ -70,6 +81,7 @@ const person = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
 
+    {profile.links.map((l) => <link rel="me" href={l.url} />)}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <script type="application/ld+json" set:html={JSON.stringify(person)} />
   </head>
