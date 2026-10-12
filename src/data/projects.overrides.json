@@ -1,0 +1,73 @@
+{
+  "hide": ["kemalmaulana.github.io", "kemalmaulana"],
+  "repos": {
+    "MDSyndrome": {
+      "title": "MDSyndrome",
+      "description": "Markdown previewer for macOS, natively built in Swift for Apple Silicon.",
+      "featured": true,
+      "tags": ["Swift", "macOS"]
+    },
+    "getx_boilerplate_kit": {
+      "title": "Flutter GetX Boilerplate Kit",
+      "description": "Production Flutter boilerplate with 8 switchable components via .env: auth, payments, UI themes, networking, storage, push, GraphQL and offline caching. Targets iOS 26 and Android 16/17.",
+      "featured": true,
+      "tags": ["Flutter", "GetX", "Boilerplate"]
+    },
+    "PokeApp": {
+      "title": "PokeApp",
+      "description": "Pokémon app: Apollo GraphQL, Paging 3, Room cache, Firebase Crashlytics.",
+      "featured": true,
+      "tags": ["Kotlin", "GraphQL", "MVVM"]
+    },
+    "stacked_mvvm_template": {
+      "title": "Stacked MVVM Template",
+      "description": "Flutter project template using the Stacked MVVM architecture.",
+      "tags": ["Flutter", "MVVM"]
+    },
+    "flutter_getx_template": {
+      "title": "Flutter GetX Template",
+      "description": "Flutter project template using GetX.",
+      "tags": ["Flutter", "GetX"]
+    },
+    "bloc_pokemon": {
+      "title": "BLoC Pokémon",
+      "description": "Minimal BLoC pattern usage in a Flutter app.",
+      "tags": ["Flutter", "BLoC"]
+    },
+    "Memorize-iOS": {
+      "title": "Memorize iOS",
+      "description": "Card-matching memory game in SwiftUI with MVVM.",
+      "tags": ["Swift", "SwiftUI"]
+    },
+    "PokeDex-iOS": {
+      "title": "PokeDex iOS",
+      "description": "Pokédex app for iOS.",
+      "tags": ["Swift"]
+    },
+    "PokeDex-Android": {
+      "title": "PokeDex Android",
+      "description": "Pokédex app for Android.",
+      "tags": ["Kotlin"]
+    },
+    "music_player_android": {
+      "title": "Music Player (Android)",
+      "description": "Music player built natively with Kotlin.",
+      "tags": ["Kotlin"]
+    },
+    "music_player_flutter": {
+      "title": "Music Player (Flutter)",
+      "description": "Music player built with Flutter.",
+      "tags": ["Flutter"]
+    },
+    "OCR-Test": {
+      "title": "OCR Test",
+      "description": "OCR experiment on Android.",
+      "tags": ["Kotlin", "OCR"]
+    },
+    "Furniture-swift": {
+      "title": "Furniture (Swift)",
+      "description": "SwiftUI furniture app.",
+      "tags": ["Swift"]
+    }
+  }
+}

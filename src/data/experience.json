@@ -1,0 +1,47 @@
+[
+  {
+    "role": "Project Manager",
+    "org": "Reacteev.id",
+    "location": "Bandung",
+    "start": "Mar 2025",
+    "end": "Present",
+    "current": true,
+    "description": "Managing multiple concurrent client projects across CRM, finance, education, and retail domains in an agile/Scrum environment. Facilitating sprint retrospectives across teams, and producing monthly executive reports (RAG status, KPIs) with a Python/ReportLab pipeline I built to automate report generation."
+  },
+  {
+    "role": "Mobile Engineer — Tenaga Ahli Programmer",
+    "org": "Dinas Komunikasi, Informatika & Statistik Kab. Bandung Barat",
+    "location": "Bandung Barat",
+    "start": "Mar 2021",
+    "end": "Present",
+    "current": true,
+    "description": "Developing and maintaining a Flutter application serving citizens and civil servants, deployed to both Android and iOS, plus additional applications built on request for government service needs."
+  },
+  {
+    "role": "Android Developer",
+    "org": "PT. Kreasi Inovasi Digital (WorkLife&Beyond)",
+    "location": "",
+    "start": "Mar 2020",
+    "end": "Feb 2021",
+    "current": false,
+    "description": "Built performance management, social media, and people-profile modules for a Human Capital Ecosystem application."
+  },
+  {
+    "role": "Freelance Android Developer",
+    "org": "Self-employed",
+    "location": "",
+    "start": "Jan 2019",
+    "end": "Dec 2020",
+    "current": false,
+    "description": "Delivered native Android projects for various clients alongside full-time roles."
+  },
+  {
+    "role": "Mobile Developer",
+    "org": "PT. Kunci Transformasi Digital",
+    "location": "",
+    "start": "Aug 2018",
+    "end": "Mar 2019",
+    "current": false,
+    "description": "Built a student monitoring application integrated with a parental notification system."
+  }
+]

@@ -1,0 +1,146 @@
+---
+import Base from "../layouts/Base.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import profile from "../data/profile.json";
+import experience from "../data/experience.json";
+import skills from "../data/skills.json";
+import education from "../data/education.json";
+import projects from "../data/projects.json";
+
+const featured = projects.filter((p) => p.featured);
+const others = projects.filter((p) => !p.featured);
+const sections = [
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "skills", label: "Skills" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" },
+];
+---
+<Base>
+  <nav class="fixed inset-x-0 top-0 z-50 border-b-[3px] border-accent bg-panel text-white">
+    <div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-5 md:px-7">
+      <a href="#top" class="font-mono text-[15px] font-bold tracking-tight">km<span class="text-accent">.</span></a>
+      <ul class="flex gap-4 text-sm md:gap-6">
+        {sections.map((s) => (
+          <li class="hidden md:block"><a href={`#${s.id}`} class="hover:text-accent">{s.label}</a></li>
+        ))}
+        <li><a href="/cv" class="font-bold text-accent hover:underline">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="top" class="pt-16">
+    <!-- HERO -->
+    <section class="border-b-[3px] border-ink px-5 py-20 md:px-7 md:py-28" aria-label="Introduction">
+      <div class="mx-auto max-w-5xl">
+        <p class="mb-4 inline-block bg-accent px-2 py-1 text-xs font-bold uppercase tracking-widest">{profile.title}</p>
+        <h1 class="mb-6 text-4xl font-bold leading-tight md:text-6xl">{profile.name}</h1>
+        <p class="max-w-2xl text-base text-muted md:text-lg">{profile.summary}</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/cv.pdf" download class="border-[3px] border-ink bg-accent px-5 py-3 font-bold shadow-[6px_6px_0_var(--color-ink)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0_var(--color-ink)]">Download CV (PDF)</a>
+          <a href={`mailto:${profile.email}`} class="border-[3px] border-ink px-5 py-3 font-bold hover:bg-ink hover:text-white">Email me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-b-[3px] border-ink px-5 py-16 md:px-7" aria-label="About">
+      <div class="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
+        <div>
+          <p class="mb-2 text-xs font-bold uppercase tracking-widest text-muted">About me</p>
+          <h2 class="mb-4 text-3xl font-bold">Crafting mobile experiences that last</h2>
+          <p class="text-muted">{profile.bio}. Based in {profile.location}.</p>
+        </div>
+        <dl class="grid grid-cols-2 gap-4">
+          {profile.stats.map((s) => (
+            <div class="border-[3px] border-ink p-5">
+              <dt class="text-sm text-muted">{s.label}</dt>
+              <dd class="mt-1 text-4xl font-bold">{s.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="border-b-[3px] border-ink px-5 py-16 md:px-7" aria-label="Experience">
+      <div class="mx-auto max-w-5xl">
+        <p class="mb-2 text-xs font-bold uppercase tracking-widest text-muted">Career</p>
+        <h2 class="mb-10 text-3xl font-bold">Where I've worked</h2>
+        <ol class="space-y-8 border-l-[3px] border-ink pl-6">
+          {experience.map((e) => (
+            <li class="relative">
+              <span class={`absolute -left-[33px] top-1 h-4 w-4 border-[3px] border-ink ${e.current ? "bg-accent" : "bg-white"}`} aria-hidden="true" />
+              <p class="text-sm text-muted">{e.start} — {e.end}</p>
+              <h3 class="text-xl font-bold">{e.role}</h3>
+              <p class="font-bold">{e.org}{e.location ? ` · ${e.location}` : ""}</p>
+              <p class="mt-2 text-muted">{e.description}</p>
+            </li>
+          ))}
+        </ol>
+        <div class="mt-12">
+          <p class="mb-2 text-xs font-bold uppercase tracking-widest text-muted">Education</p>
+          {education.map((ed) => (
+            <p><span class="font-bold">{ed.degree}</span>, {ed.school}. <span class="text-muted">{ed.note}</span></p>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="border-b-[3px] border-ink px-5 py-16 md:px-7" aria-label="Skills">
+      <div class="mx-auto max-w-5xl">
+        <p class="mb-2 text-xs font-bold uppercase tracking-widest text-muted">Tech stack</p>
+        <h2 class="mb-10 text-3xl font-bold">Tools of the trade</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          {skills.map((group) => (
+            <div class="border-[3px] border-ink p-5">
+              <h3 class="mb-3 font-bold">{group.category}</h3>
+              <ul class="flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <li class="border-2 border-ink px-2 py-1 text-sm">{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="border-b-[3px] border-ink px-5 py-16 md:px-7" aria-label="Projects">
+      <div class="mx-auto max-w-5xl">
+        <p class="mb-2 text-xs font-bold uppercase tracking-widest text-muted">Selected work</p>
+        <h2 class="mb-10 text-3xl font-bold">Things I've built</h2>
+        <h3 class="mb-4 text-sm font-bold uppercase tracking-widest">Featured</h3>
+        <ul class="mb-12 grid gap-5 md:grid-cols-2">
+          {featured.map((p) => <li><ProjectCard p={p} /></li>)}
+        </ul>
+        <h3 class="mb-4 text-sm font-bold uppercase tracking-widest">More on GitHub</h3>
+        <ul class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {others.map((p) => <li><ProjectCard p={p} /></li>)}
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="px-5 py-20 md:px-7" aria-label="Contact">
+      <div class="mx-auto max-w-5xl border-[3px] border-ink p-8 md:p-12">
+        <p class="mb-2 text-xs font-bold uppercase tracking-widest text-muted">Get in touch</p>
+        <h2 class="mb-4 text-3xl font-bold">Let's work together</h2>
+        <p class="mb-8 max-w-xl text-muted">Open to mobile engineering challenges, collaborations, or a good conversation about tech.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href={`mailto:${profile.email}`} class="border-[3px] border-ink bg-accent px-5 py-3 font-bold">{profile.email}</a>
+          {profile.links.map((l) => (
+            <a href={l.url} target="_blank" rel="noopener noreferrer" class="border-[3px] border-ink px-5 py-3 font-bold hover:bg-ink hover:text-white">{l.label}</a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t-[3px] border-ink px-5 py-6 text-center text-xs text-muted md:px-7">
+    © {new Date().getFullYear()} {profile.name}
+  </footer>
+</Base>

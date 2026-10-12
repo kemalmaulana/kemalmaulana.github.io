@@ -1,0 +1,45 @@
+---
+// Print-only CV route. scripts/build-cv.mjs renders this page to public/cv.pdf.
+import profile from "../data/profile.json";
+import experience from "../data/experience.json";
+import skills from "../data/skills.json";
+import education from "../data/education.json";
+import Base from "../layouts/Base.astro";
+---
+<Base title={`${profile.name} — CV`} description="Curriculum vitae">
+  <main class="mx-auto max-w-[190mm] px-2 py-6">
+    <header class="mb-6 border-b-[3px] border-ink pb-4">
+      <h1 class="text-3xl font-bold">{profile.name}</h1>
+      <p class="font-bold">{profile.title} · {profile.location}</p>
+      <p class="text-sm">
+        {profile.email} · {profile.links.map((l) => l.handle).join(" · ")}
+      </p>
+    </header>
+
+    <section class="mb-6">
+      <h2 class="mb-2 text-sm font-bold uppercase tracking-widest">Summary</h2>
+      <p>{profile.summary}</p>
+    </section>
+
+    <section class="mb-6">
+      <h2 class="mb-2 text-sm font-bold uppercase tracking-widest">Experience</h2>
+      {experience.map((e) => (
+        <div class="mb-3">
+          <p class="font-bold">{e.role} · {e.org}</p>
+          <p class="text-xs">{e.start} — {e.end}{e.location ? ` · ${e.location}` : ""}</p>
+          <p class="text-sm">{e.description}</p>
+        </div>
+      ))}
+    </section>
+
+    <section class="mb-6">
+      <h2 class="mb-2 text-sm font-bold uppercase tracking-widest">Education</h2>
+      {education.map((ed) => <p><span class="font-bold">{ed.degree}</span>, {ed.school}. {ed.note}</p>)}
+    </section>
+
+    <section>
+      <h2 class="mb-2 text-sm font-bold uppercase tracking-widest">Skills</h2>
+      {skills.map((g) => <p class="text-sm"><span class="font-bold">{g.category}:</span> {g.items.join(", ")}</p>)}
+    </section>
+  </main>
+</Base>

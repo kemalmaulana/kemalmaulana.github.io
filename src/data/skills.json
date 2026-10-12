@@ -1,0 +1,8 @@
+[
+  { "category": "Languages", "items": ["Kotlin", "Java", "Swift", "Dart", "C++"] },
+  { "category": "Mobile Frameworks", "items": ["Android SDK", "Flutter", "SwiftUI", "UIKit", "Jetpack Compose"] },
+  { "category": "Architecture", "items": ["MVVM", "Clean Architecture", "BLoC", "GetX", "MVI"] },
+  { "category": "Libraries", "items": ["Dagger Hilt", "Retrofit", "Room", "Coroutines", "Flow", "Apollo GraphQL", "Lottie", "Paging 3", "Firebase"] },
+  { "category": "DevOps & Tooling", "items": ["Git", "GitHub Actions", "Postman", "SonarQube", "Android Studio", "Xcode"] },
+  { "category": "IoT & Hardware", "items": ["Arduino", "Raspberry Pi", "Embedded C", "SQLite"] }
+]

@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Brutalist tokens carried over from the previous site */
+@theme {
+  --color-bg: #ffffff;
+  --color-ink: #0a0a0a;
+  --color-muted: #4b4b4b;
+  --color-accent: #dfe104;
+  --color-panel: #0a0a0a;
+  --font-mono: "Space Mono", "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-mono);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::selection { background: var(--color-accent); color: var(--color-ink); }
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+@media print {
+  body { background: #fff; color: #000; font-size: 10pt; }
+  nav, .no-print { display: none !important; }
+  @page { size: A4; margin: 14mm; }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Kemal Maulana",
+  "title": "Project Manager & Mobile Engineer",
+  "location": "Bandung, Indonesia",
+  "email": "kemalmaulana19@gmail.com",
+  "bio": "Provehito in Altum",
+  "summary": "Mobile engineer turned project manager with 8+ years shipping production apps: native Android (Kotlin/Java) since 2018, Flutter since 2021. Focused on clean architecture, readable code, and ship quality that holds up over time.",
+  "links": [
+    { "label": "GitHub", "handle": "@kemalmaulana", "url": "https://github.com/kemalmaulana" },
+    { "label": "LinkedIn", "handle": "kemal-maulana", "url": "https://www.linkedin.com/in/kemal-maulana/" }
+  ],
+  "stats": [
+    { "value": "8+", "label": "Years in mobile development" },
+    { "value": "5+", "label": "Production apps shipped" },
+    { "value": "4", "label": "Languages mastered" },
+    { "value": "3", "label": "Platforms: Android, iOS, Desktop" }
+  ]
+}
