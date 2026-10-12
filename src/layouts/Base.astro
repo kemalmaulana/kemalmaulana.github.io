@@ -13,20 +13,41 @@ const {
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const image = "https://github.com/kemalmaulana.png";
+const image = new URL("/avatar.png", Astro.site).toString();
+const personId = `${Astro.site}#person`;
 
 const person = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: profile.name,
-  url: Astro.site?.toString(),
-  image,
-  jobTitle: ["Project Manager", "Mobile Engineer"],
-  email: `mailto:${profile.email}`,
-  alumniOf: { "@type": "CollegeOrUniversity", name: "Pasundan University" },
-  address: { "@type": "PostalAddress", addressLocality: "Bandung", addressCountry: "ID" },
-  sameAs: profile.links.map((l) => l.url),
-  knowsAbout: ["Android", "Flutter", "Kotlin", "Swift", "Dart", "Mobile Development", "IoT"],
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": personId,
+      name: profile.name,
+      alternateName: "kemalmaulana",
+      url: Astro.site?.toString(),
+      image,
+      description: profile.summary,
+      jobTitle: profile.title,
+      email: `mailto:${profile.email}`,
+      worksFor: [
+        { "@type": "Organization", name: "Reacteev.id" },
+        { "@type": "Organization", name: "Dinas Komunikasi, Informatika & Statistik Kab. Bandung Barat" },
+      ],
+      alumniOf: { "@type": "CollegeOrUniversity", name: "Pasundan University" },
+      address: { "@type": "PostalAddress", addressLocality: "Bandung", addressCountry: "ID" },
+      sameAs: profile.links.map((l) => l.url),
+      knowsAbout: profile.expertise,
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${canonical}#page`,
+      url: canonical.toString(),
+      name: title,
+      description,
+      mainEntity: { "@id": personId },
+      inLanguage: "en",
+    },
+  ],
 };
 ---
 <!doctype html>

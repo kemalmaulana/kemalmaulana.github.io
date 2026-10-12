@@ -2,6 +2,8 @@
   "name": "Kemal Maulana",
   "title": "Project Manager & Mobile Engineer",
   "location": "Bandung, Indonesia",
+  "avatar": "/avatar.png",
+  "expertise": ["Android development", "Flutter", "Kotlin", "Swift", "Dart", "Mobile architecture (MVVM, Clean Architecture, BLoC)", "Project management (Agile/Scrum)", "IoT with Arduino and Raspberry Pi"],
   "email": "kemalmaulana19@gmail.com",
   "bio": "Provehito in Altum",
   "summary": "Mobile engineer turned project manager with 8+ years shipping production apps: native Android (Kotlin/Java) since 2018, Flutter since 2021. Focused on clean architecture, readable code, and ship quality that holds up over time.",

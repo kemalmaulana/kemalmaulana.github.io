@@ -14,9 +14,23 @@
     ]
   },
   {
+    "name": "stacked_mvvm_template",
+    "title": "Stacked MVVM Template",
+    "description": "Flutter project template built on the Stacked MVVM architecture.",
+    "language": "Dart",
+    "url": "https://github.com/kemalmaulana/stacked_mvvm_template",
+    "stars": 0,
+    "pushedAt": "2025-10-11",
+    "featured": true,
+    "tags": [
+      "Flutter",
+      "MVVM"
+    ]
+  },
+  {
     "name": "PokeApp",
     "title": "PokeApp",
-    "description": "Pokémon app: Apollo GraphQL, Paging 3, Room cache, Firebase Crashlytics.",
+    "description": "Pokémon app: Apollo GraphQL, Paging 3 infinite scroll, Room cache, Firebase Crashlytics.",
     "language": "Kotlin",
     "url": "https://github.com/kemalmaulana/PokeApp",
     "stars": 0,
@@ -29,162 +43,31 @@
     ]
   },
   {
-    "name": "Steelseries-GGEZ",
-    "title": "Steelseries-GGEZ",
-    "description": "",
-    "language": "Swift",
-    "url": "https://github.com/kemalmaulana/Steelseries-GGEZ",
-    "stars": 0,
-    "pushedAt": "2026-10-10",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "cat_holic",
-    "title": "cat_holic",
-    "description": "",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/cat_holic",
-    "stars": 0,
-    "pushedAt": "2026-10-01",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "plane_mobile_v2",
-    "title": "plane_mobile_v2",
-    "description": "",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/plane_mobile_v2",
-    "stars": 0,
-    "pushedAt": "2026-08-22",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "composable_viewer",
-    "title": "composable_viewer",
-    "description": "",
-    "language": "JavaScript",
-    "url": "https://github.com/kemalmaulana/composable_viewer",
-    "stars": 0,
-    "pushedAt": "2026-08-10",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "assppweb",
-    "title": "assppweb",
-    "description": "",
-    "language": "TypeScript",
-    "url": "https://github.com/kemalmaulana/assppweb",
-    "stars": 0,
-    "pushedAt": "2026-06-30",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "flutter_getx_template",
-    "title": "Flutter GetX Template",
-    "description": "Flutter project template using GetX.",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/flutter_getx_template",
-    "stars": 1,
-    "pushedAt": "2025-12-31",
-    "featured": false,
-    "tags": [
-      "Flutter",
-      "GetX"
-    ]
-  },
-  {
-    "name": "real_webview",
-    "title": "real_webview",
-    "description": "",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/real_webview",
-    "stars": 0,
-    "pushedAt": "2025-11-13",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "stacked_mvvm_template",
-    "title": "Stacked MVVM Template",
-    "description": "Flutter project template using the Stacked MVVM architecture.",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/stacked_mvvm_template",
-    "stars": 0,
-    "pushedAt": "2025-10-11",
-    "featured": false,
-    "tags": [
-      "Flutter",
-      "MVVM"
-    ]
-  },
-  {
-    "name": "bloc_pokemon",
-    "title": "BLoC Pokémon",
-    "description": "Minimal BLoC pattern usage in a Flutter app.",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/bloc_pokemon",
-    "stars": 1,
-    "pushedAt": "2025-06-03",
-    "featured": false,
-    "tags": [
-      "Flutter",
-      "BLoC"
-    ]
-  },
-  {
-    "name": "OCR-Test",
-    "title": "OCR Test",
-    "description": "OCR experiment on Android.",
+    "name": "Stockbit-Clone",
+    "title": "Stockbit Clone",
+    "description": "Stock-trading app clone built natively in Kotlin, recreating fintech UI, watchlists and market data flows.",
     "language": "Kotlin",
-    "url": "https://github.com/kemalmaulana/OCR-Test",
+    "url": "https://github.com/kemalmaulana/Stockbit-Clone",
     "stars": 0,
-    "pushedAt": "2024-12-29",
+    "pushedAt": "2021-01-27",
     "featured": false,
     "tags": [
       "Kotlin",
-      "OCR"
+      "Android"
     ]
   },
   {
-    "name": "fl_location",
-    "title": "fl_location",
-    "description": "",
-    "language": "Kotlin",
-    "url": "https://github.com/kemalmaulana/fl_location",
-    "stars": 1,
-    "pushedAt": "2024-02-27",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "PokeDex-Android",
-    "title": "PokeDex Android",
-    "description": "Pokédex app for Android.",
-    "language": "Kotlin",
-    "url": "https://github.com/kemalmaulana/PokeDex-Android",
+    "name": "Face-Recognizer",
+    "title": "Face Recognizer",
+    "description": "Facial recognition in C++ with OpenCV: image processing and ML inference outside the mobile stack.",
+    "language": "C++",
+    "url": "https://github.com/kemalmaulana/Face-Recognizer",
     "stars": 0,
-    "pushedAt": "2023-07-23",
+    "pushedAt": "2020-07-22",
     "featured": false,
     "tags": [
-      "Kotlin"
-    ]
-  },
-  {
-    "name": "Furniture-swift",
-    "title": "Furniture (Swift)",
-    "description": "SwiftUI furniture app.",
-    "language": "Swift",
-    "url": "https://github.com/kemalmaulana/Furniture-swift",
-    "stars": 0,
-    "pushedAt": "2023-06-17",
-    "featured": false,
-    "tags": [
-      "Swift"
+      "C++",
+      "OpenCV"
     ]
   },
   {
@@ -200,220 +83,5 @@
       "Swift",
       "SwiftUI"
     ]
-  },
-  {
-    "name": "infinte_scroll",
-    "title": "infinte_scroll",
-    "description": "",
-    "language": null,
-    "url": "https://github.com/kemalmaulana/infinte_scroll",
-    "stars": 0,
-    "pushedAt": "2022-11-01",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "git_get",
-    "title": "git_get",
-    "description": "",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/git_get",
-    "stars": 0,
-    "pushedAt": "2022-10-27",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "Kompas.id",
-    "title": "Kompas.id",
-    "description": "Kompas Take Home Test",
-    "language": "Kotlin",
-    "url": "https://github.com/kemalmaulana/Kompas.id",
-    "stars": 0,
-    "pushedAt": "2022-09-05",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "music_player_flutter",
-    "title": "Music Player (Flutter)",
-    "description": "Music player built with Flutter.",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/music_player_flutter",
-    "stars": 1,
-    "pushedAt": "2022-07-22",
-    "featured": false,
-    "tags": [
-      "Flutter"
-    ]
-  },
-  {
-    "name": "music_player_android",
-    "title": "Music Player (Android)",
-    "description": "Music player built natively with Kotlin.",
-    "language": "Kotlin",
-    "url": "https://github.com/kemalmaulana/music_player_android",
-    "stars": 0,
-    "pushedAt": "2022-07-22",
-    "featured": false,
-    "tags": [
-      "Kotlin"
-    ]
-  },
-  {
-    "name": "PokeDex-iOS",
-    "title": "PokeDex iOS",
-    "description": "Pokédex app for iOS.",
-    "language": "Swift",
-    "url": "https://github.com/kemalmaulana/PokeDex-iOS",
-    "stars": 0,
-    "pushedAt": "2022-04-28",
-    "featured": false,
-    "tags": [
-      "Swift"
-    ]
-  },
-  {
-    "name": "efi_14iil05",
-    "title": "efi_14iil05",
-    "description": "",
-    "language": "ASL",
-    "url": "https://github.com/kemalmaulana/efi_14iil05",
-    "stars": 0,
-    "pushedAt": "2022-04-25",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "nu_coffee",
-    "title": "nu_coffee",
-    "description": "",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/nu_coffee",
-    "stars": 0,
-    "pushedAt": "2021-08-10",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "flutter_base_bloc",
-    "title": "flutter_base_bloc",
-    "description": "",
-    "language": "Dart",
-    "url": "https://github.com/kemalmaulana/flutter_base_bloc",
-    "stars": 0,
-    "pushedAt": "2021-03-30",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "Stockbit-Clone",
-    "title": "Stockbit-Clone",
-    "description": "",
-    "language": "Kotlin",
-    "url": "https://github.com/kemalmaulana/Stockbit-Clone",
-    "stars": 0,
-    "pushedAt": "2021-01-27",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "OpenCore-HP_14ac144tx",
-    "title": "OpenCore-HP_14ac144tx",
-    "description": "",
-    "language": "ASL",
-    "url": "https://github.com/kemalmaulana/OpenCore-HP_14ac144tx",
-    "stars": 0,
-    "pushedAt": "2020-09-26",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "Clover-HP_14ac144tx",
-    "title": "Clover-HP_14ac144tx",
-    "description": "Hackintosh Bootloader for HP-14ac144tx",
-    "language": "Rich Text Format",
-    "url": "https://github.com/kemalmaulana/Clover-HP_14ac144tx",
-    "stars": 0,
-    "pushedAt": "2020-07-24",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "Face-Recognizer",
-    "title": "Face-Recognizer",
-    "description": "",
-    "language": "C++",
-    "url": "https://github.com/kemalmaulana/Face-Recognizer",
-    "stars": 0,
-    "pushedAt": "2020-07-22",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "Practice-Test-Hipe-Indonesia",
-    "title": "Practice-Test-Hipe-Indonesia",
-    "description": "Tes praktik untuk Hipe Indonesia",
-    "language": "Kotlin",
-    "url": "https://github.com/kemalmaulana/Practice-Test-Hipe-Indonesia",
-    "stars": 0,
-    "pushedAt": "2020-01-25",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "Logic-Test-Hipe-Indonesia",
-    "title": "Logic-Test-Hipe-Indonesia",
-    "description": "Logic Test Hipe Indonesia",
-    "language": "Java",
-    "url": "https://github.com/kemalmaulana/Logic-Test-Hipe-Indonesia",
-    "stars": 0,
-    "pushedAt": "2020-01-25",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "hackintosh-efi",
-    "title": "hackintosh-efi",
-    "description": "",
-    "language": "Shell",
-    "url": "https://github.com/kemalmaulana/hackintosh-efi",
-    "stars": 0,
-    "pushedAt": "2019-01-01",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "iSolution-Rev2",
-    "title": "iSolution-Rev2",
-    "description": "",
-    "language": "Kotlin",
-    "url": "https://github.com/kemalmaulana/iSolution-Rev2",
-    "stars": 0,
-    "pushedAt": "2018-12-30",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "iSolution",
-    "title": "iSolution",
-    "description": "",
-    "language": "Java",
-    "url": "https://github.com/kemalmaulana/iSolution",
-    "stars": 0,
-    "pushedAt": "2018-08-04",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "name": "Potato-Fit",
-    "title": "Potato-Fit",
-    "description": "Potato-Fit Android",
-    "language": "Java",
-    "url": "https://github.com/kemalmaulana/Potato-Fit",
-    "stars": 0,
-    "pushedAt": "2018-07-28",
-    "featured": false,
-    "tags": []
   }
 ]

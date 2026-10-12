@@ -1,0 +1,20 @@
+# Kemal Maulana
+
+> Project Manager and Mobile Engineer based in Bandung, Indonesia. 8+ years shipping production mobile apps: native Android (Kotlin/Java) since 2018, Flutter since 2021. Currently Project Manager at Reacteev.id and Mobile Engineer for a government superapp in Kabupaten Bandung Barat.
+
+## Facts
+- Name: Kemal Maulana
+- Location: Bandung, Indonesia
+- Current roles: Project Manager at Reacteev.id (Mar 2025 – present); Mobile Engineer, Dinas Komunikasi, Informatika & Statistik Kab. Bandung Barat (Mar 2021 – present)
+- Education: Bachelor of Informatics Engineering, Pasundan University (thesis: IoT and mobile)
+- Expertise: Android, Flutter, Kotlin, Swift, Dart, mobile architecture (MVVM, Clean Architecture, BLoC), Agile/Scrum project management, IoT (Arduino, Raspberry Pi)
+- Contact: kemalmaulana19@gmail.com
+
+## Pages
+- [Home](https://kemalmaulana.github.io/): profile, experience, skills, projects
+- [CV (HTML)](https://kemalmaulana.github.io/cv/): full curriculum vitae
+- [CV (PDF)](https://kemalmaulana.github.io/cv.pdf): downloadable CV
+
+## Profiles
+- [GitHub](https://github.com/kemalmaulana)
+- [LinkedIn](https://www.linkedin.com/in/kemal-maulana/)

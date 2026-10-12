@@ -34,6 +34,7 @@ const sections = [
     <!-- HERO -->
     <section class="border-b-[3px] border-ink px-5 py-20 md:px-7 md:py-28" aria-label="Introduction">
       <div class="mx-auto max-w-5xl">
+        <img src={profile.avatar} alt={`Portrait of ${profile.name}`} width="112" height="112" class="mb-6 h-28 w-28 border-[3px] border-ink object-cover" />
         <p class="mb-4 inline-block bg-accent px-2 py-1 text-xs font-bold uppercase tracking-widest">{profile.title}</p>
         <h1 class="mb-6 text-4xl font-bold leading-tight md:text-6xl">{profile.name}</h1>
         <p class="max-w-2xl text-base text-muted md:text-lg">{profile.summary}</p>
